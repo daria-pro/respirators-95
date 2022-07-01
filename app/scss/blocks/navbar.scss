@@ -1,0 +1,116 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &__logo {
+    width: 161px;
+    height: 40px;
+    background-color: #c4c4c4;
+    margin-right: 30px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+
+    @include onTablet {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      padding: 20px 0;
+
+      &--active {
+        left: 0;
+      }
+    }
+  }
+
+  &__item {
+    display: block;
+    z-index: 3;
+
+    @include onTablet {
+      width: 100%;
+      text-align: center;
+      order: 3;
+      margin: 0 auto;
+    }
+
+    &:not(:nth-child(6)) {
+      margin-right: 45px;
+
+      @include onTablet {
+        padding: 1px 10px;
+        margin: 0;
+      }
+    }
+
+    &--button {
+      width: 123px;
+      order: 3;
+      margin: 0;
+
+      @include onTablet {
+        order: 3;
+        margin: 10px auto !important;
+      }
+    }
+  }
+
+  &__link {
+    @extend %body-1;
+    line-height: 30px;
+    text-decoration: none;
+    color: $colorGrey;
+
+    &--active {
+      color: $colorDark;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+
+    @include onTablet {
+      display: block;
+      cursor: pointer;
+
+      &--active .navbar__bar:nth-child(2) {
+        opacity: 0;
+      }
+
+      &--active .navbar__bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      &--active .navbar__bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+
+  &__bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: $colorBlue;
+    border-radius: 4px;
+  }
+}

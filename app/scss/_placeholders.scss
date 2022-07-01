@@ -1,0 +1,59 @@
+%h1 {
+  color: $colorDark;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 82px;
+
+  @include onTablet {
+    font-size: 55px;
+    line-height: 60px;
+  }
+
+  @include onMobile {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+
+%h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+
+  @include onTablet {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  @include onMobile {
+    font-size: 35px;
+    line-height: 38px;
+  }
+}
+
+%h3 {
+  color: $colorDark;
+  font-weight: 700;
+  font-size: 20px;
+
+  @include onMobile {
+    font-size: 18px;
+  }
+}
+
+%body-1 {
+  font-size: 16px;
+}
+
+%body-2 {
+  font-size: 15px;
+}
+
+%body-rubik {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+}

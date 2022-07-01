@@ -1,0 +1,122 @@
+.about {
+  position: relative;
+
+  &__article {
+    display: flex;
+    position: relative;
+    gap: 47px;
+    margin-bottom: 80px;
+
+    @include onTablet {
+      flex-direction: column;
+      align-items: center;
+      gap: 26px;
+    }
+  }
+  &__image {
+    flex: 1;
+    max-width: 570px;
+    height: 616px;
+    z-index: 3;
+
+    @include onTablet {
+      order: 2;
+    }
+
+    &--position1 img {
+      object-position: 62% 50%;
+    }
+
+    &--position2 img {
+      object-position: 32% 50%;
+    }
+  }
+
+  &__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 16px 0;
+  }
+
+  &__text-body {
+    flex: 1;
+
+    @include onTablet {
+      flex: 0 1 auto;
+      max-width: 620px;
+    }
+  }
+
+  &__title {
+    @extend %h2;
+    margin-bottom: 26px;
+
+    @include onTablet {
+      text-align: center;
+    }
+  }
+
+  &__paragraph {
+    @extend %body-1;
+    line-height: 30px;
+    color: $colorGrey;
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: 0;
+    max-width: 1093px;
+    height: 1460px;
+
+    @include onSmallDesktop {
+      width: 700px;
+      height: 1000px;
+    }
+
+    @include onTablet {
+      width: 350px;
+      height: 500px;
+    }
+
+    @include onMobile {
+      width: 300px;
+      height: 400px;
+    }
+
+    &--1 {
+      top: -25%;
+      left: -60%;
+
+      @include onSmallDesktop {
+        top: 0;
+        left: -20%;
+      }
+
+      @include onTablet {
+        top: 0;
+        left: -10%;
+      }
+
+      @include onMobile {
+        top: 0;
+        left: -20%;
+      }
+    }
+
+    &--2 {
+      bottom: -130%;
+      right: -60%;
+
+      @include onSmallDesktop {
+        bottom: -25%;
+        right: 0;
+      }
+
+      @include onTablet {
+        bottom: 20%;
+        right: 0;
+      }
+    }
+  }
+}

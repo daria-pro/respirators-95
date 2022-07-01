@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  &__section {
+    margin-bottom: 80px;
+
+    @include onMobile {
+      margin-bottom: 50px;
+    }
+  }
+}

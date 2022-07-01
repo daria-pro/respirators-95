@@ -1,24 +1,549 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Gulp Browsersync</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@600&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="dist/style.css">
-</head>
-<body>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gulp Browsersync</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ee3051e5c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dist/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="page__body">
+    <header class="page__section header">
+      <div class="container">
+        <div class="header__content">
+          <nav class="header__navbar navbar">
+            <a class="navbar__logo"></a>
+            <ul class="navbar__list">
+              <li class="navbar__item navbar__item">
+                <a class="navbar__link navbar__link--active" href="#">Home</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#about">About</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#product">Product</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#contact">Contact</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">History</a>
+              </li>
+              <li class="navbar__item navbar__item--button">
+                <a class="navbar__link btn btn--blue" href="#">Contact us</a>
+              </li>
+            </ul>
+            <div class="navbar__hamburger">
+              <span class="navbar__bar"></span>
+              <span class="navbar__bar"></span>
+              <span class="navbar__bar"></span>
+            </div>
+          </nav>
+          <div class="header__main-content">
+            <div class="header__text-wrapper">
+              <h4 class="header__subtitle">3M N95 masks</h4>
+              <h1 class="header__title">Protective Face Masks</h1>
+              <p class="header__description">
+                We offer the fast delivery wholesale selection of N95 masks and
+                surgical masks, featuring FDA-approved quality and 2 – 5 days
+                delivery, our wholesale face masks are ideal for influenza or
+                novel coronavirus prevention.
+              </p>
+              <div class="header__buttons">
+                <button class="btn btn--blue">Shop now</button>
+                <button class="btn btn--accent">Learn more</button>
+              </div>
+            </div>
+            <div class="header__image-wrapper">
+              <img src="./images/1.png" alt="woman in face mask" />
+            </div>
+            <div class="header__bg-image">
+              <img src="./images/bg-img1.png" />
+            </div>
+          </div>
+          <ul class="header__benefits benefits">
+            <li class="benefits__item">
+              <img src="./images/benefit1.svg" />
+              <div class="benefits__item-body">
+                <h3 class="benefits__item-title">Full-Service Shipping</h3>
+                <p class="benefits__item-description">
+                  From picking to custom-crating to domestic and international
+                  shipping, we handle it all for you.
+                </p>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <img src="./images/benefit2.svg" />
+              <div class="benefits__item-body">
+                <h3 class="benefits__item-title">Multi-Point Inspection</h3>
+                <p class="benefits__item-description">
+                  To ensure quality, our team of HTM professionals fully assess
+                  and evaluate all equipment.
+                </p>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <img src="./images/benefit3.svg" />
+              <div class="benefits__item-body">
+                <h3 class="benefits__item-title">
+                  Professional Product Support
+                </h3>
+                <p class="benefits__item-description">
+                  If you have any questions about the equipment, our product
+                  specialists are here to help.
+                </p>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <img src="./images/benefit4.svg" />
+              <div class="benefits__item-body">
+                <h3 class="benefits__item-title">
+                  Secure and Easy Payment Methods
+                </h3>
+                <p class="benefits__item-description">
+                  Pay your way, whether by credit card, PayPal or the redemption
+                  of earned credits.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page__section about" id="about">
+        <div class="container">
+          <article class="about__article">
+            <div class="about__image about__image--position1">
+              <img src="./images/2.png" />
+            </div>
+            <div class="about__text-body">
+              <h2 class="about__title">N95 Respirators</h2>
+              <p class="about__paragraph">
+                The N95 mask is a form of respiratory protective wear worn over
+                the nose and mouth to help minimise the chance of inhaling
+                airborne particles like viruses and other germs. It is a
+                disposable mask made from synthetic polymer fibres produced in a
+                highly specialised process called melt blowing. During this
+                process, the inner layer of the N95 mask is created which forms
+                the filtration layer capable of filtering out at least 95% of
+                airborne particles when worn correctly.
+                <br />
+                <br />
+                During outbreaks of respiratory illnesses and during periods of
+                intense air pollution, wearing N95 masks has been shown to help
+                reduce the inhalation of compromised air, filtering out nasty
+                pathogens which lead to illness or which can aggravate existing
+                respiratory problems. Maintaining clear and unhindered
+                respiration is vitally important for remaining fit and healthy
+                and people with pre-existing conditions or respiratory fragility
+                can particularly benefit from wearing face masks while they are
+                out in public and unable to control the breathing environments
+                that they find themselves in.
+              </p>
+            </div>
+            <img class="about__bg about__bg--1" src="./images/arrowRight.svg" />
+          </article>
+          <article class="about__article">
+            <div class="about__text-body">
+              <h2 class="about__title">
+                N95 Respirators In Industrial And Health Care Settings
+              </h2>
+              <p class="about__paragraph">
+                Most N95 respirators are manufactured for use in construction
+                and other industrial type jobs that expose workers to dust and
+                small particles. They are regulated by the National Personal
+                Protective Technology Laboratory (NPPTL) in the National
+                Institute for Occupational Safety and Health (NIOSH), which is
+                part of the Centers for Disease Control and Prevention (CDC).
+                <br />
+                <br />
+                However, some N95 respirators are intended for use in a health
+                care setting. Specifically, single-use, disposable respiratory
+                protective devices used and worn by health care personnel during
+                procedures to protect both the patient and health care personnel
+                from the transfer of microorganisms, body fluids, and
+                particulate material. These surgical N95 respirators are class
+                II devices regulated by the FDA, under 21 CFR 878.4040, and CDC
+                NIOSH under 42 CFR Part 84.
+              </p>
+            </div>
+            <div class="about__image about__image--position2">
+              <img src="./images/3.png" />
+            </div>
+            <img class="about__bg about__bg--2" src="./images/arrowLeft.svg" />
+          </article>
+          <div class="about__card card">
+            <div class="card__image">
+              <img src="./images/4.png" />
+              <div class="card__image-overlay">
+                <p>
+                  Given the praised reputation and reliable quality within the
+                  industry, we have also established preliminary business
+                  agreements with some hospitals, local governments and medical
+                  institutions in Guangdong Province.
+                </p>
+              </div>
+            </div>
+            <div class="card__top-left-block">
+              <p class="card__paragraph">
+                After years of development, Health Pro has reached stable
+                long-term cooperation with many hospitals and medical
+                institutions in Hong Kong.
+              </p>
+            </div>
+            <div class="card__top-right-block">
+              <p class="card__paragraph">
+                We are keenly looking forward to expand our market in Mainland
+                China and overseas in the future, as we have strong beliefs in
+                our products.
+              </p>
+            </div>
+            <div class="card__bottom-block">
+              <h3 class="card__title">Proudly Made in Hong Kong</h3>
+              <p class="card__paragraph">
+                Our factory is located in Hong Kong. Equipped with machines and
+                assembly line of the best quality on the market to ensure
+                quality control.
+              </p>
+              <div class="card__footer">
+                <button class="btn btn--blue-outlined card__btn">
+                  Learn more
+                </button>
+                <div class="card__divider"></div>
+                <div class="card__contact-section">
+                  <a class="card__phone-icon-bg" href="tel: +11234445678">
+                    <i class="fa-solid fa-phone-flip card__phone-icon"></i>
+                  </a>
+                  <div class="card__contact-text">
+                    <p class="card__contact-title">Contact us</p>
+                    <a class="card__contact-number" href="tel: +11234445678"
+                      >+1 123 444 5678</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__section product" id="product">
+        <div class="product__bg"></div>
+        <div class="container">
+          <div class="product__certification certification">
+            <p class="certification__title">Our Lab Certification</p>
+            <div class="certification__divider"></div>
+            <img src="./images/fda.png" class="certification__image" />
+            <img src="./images/nelson.png" class="certification__image" />
+            <img src="./images/cnas.png" class="certification__image" />
+          </div>
+          <article class="product__article">
+            <div class="product__image">
+              <img src="./images/mask.png" />
+            </div>
+            <div class="product__text-body">
+              <h2 class="product__title">Reasons To Choose Our Products</h2>
+              <p class="product__paragraph">
+                All products of Health Pro have obtained the certifications
+                issued by national specialized agencies and testing
+                laboratories. They have also passed the quality inspection of
+                several international famous testing institutions. We have
+                absolute confidence that every product of Health Pro is a of the
+                top quality.
+              </p>
+              <ul class="product__reasons">
+                <li class="product__reason">
+                  <div class="product__icon-bg">
+                    <i class="fas fa-trophy product__icon"></i>
+                  </div>
+                  <div class="product__reason-text-body">
+                    <h3 class="product__subtitle">Industry leader</h3>
+                    <p class="product__reason-paragraph">
+                      If you have any questions about the equipment, our product
+                      specialists are here to help, specialists are here.
+                    </p>
+                  </div>
+                </li>
+                <li class="product__reason">
+                  <div class="product__icon-bg">
+                    <i class="fa-solid fa-chart-column product__icon"></i>
+                  </div>
+                  <div class="product__reason-text-body">
+                    <h3 class="product__subtitle">
+                      Innovation 3 led development
+                    </h3>
+                    <p class="product__reason-paragraph">
+                      If you have any questions about the equipment, our product
+                      specialists are here to help.
+                    </p>
+                  </div>
+                </li>
+                <li class="product__reason">
+                  <div class="product__icon-bg">
+                    <i class="fas fa-shield-alt product__icon"></i>
+                  </div>
+                  <div class="product__reason-text-body">
+                    <h3 class="product__subtitle">
+                      To create a safer tomorrow for all
+                    </h3>
+                    <p class="product__reason-paragraph">
+                      If you have any questions about the equipment, our product
+                      specialists are here to help.
+                    </p>
+                  </div>
+                </li>
+                <li class="product__reason">
+                  <div class="product__icon-bg">
+                    <i class="fas fa-user-friends product__icon"></i>
+                  </div>
+                  <div class="product__reason-text-body">
+                    <h3 class="product__subtitle">
+                      To protect and to improve living quality for all
+                    </h3>
+                    <p class="product__reason-paragraph">
+                      If you have any questions about the equipment, our product
+                      specialists are here to help.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <ul class="product__reviews reviews">
+            <li class="reviews__card">
+              <div class="reviews__card-header">
+                <div class="reviews__stars">
+                  <i class="fa-solid fa-star reviews__star"></i>
+                  <i class="fa-solid fa-star reviews__star"></i>
+                  <i class="fa-solid fa-star reviews__star"></i>
+                  <i class="fa-solid fa-star reviews__star"></i>
+                  <i class="fa-solid fa-star reviews__star"></i>
+                </div>
+                <img class="reviews__social-icon" src="./images/yelp.svg" />
+              </div>
+              <p class="reviews__review-text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent mollis consequat consequat. Sed viverra dapibus
+                maximus. Donec at metus mattis, vehicula arcu eget, pulvinar
+                est. Donec at placerat nisi, ac scelerisque eros. Pellentesque a
+                feugiat sem. "
+              </p>
+              <div class="reviews__card-footer">
+                <div class="reviews__card-img">
+                  <img src="./images/person1.jpg" />
+                </div>
+                <div class="reviews__person-info">
+                  <p class="reviews__person-name">maria eve</p>
+                  <p class="reviews__person-position">Lawyer</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__card">
+              <div class="reviews__card-header">
+                <div class="reviews__stars">
+                  <i class="fa-solid fa-star reviews__star"></i>
+                  <i class="fa-solid fa-star reviews__star"></i>
+                  <i class="fa-solid fa-star reviews__star"></i>
+                  <i class="fa-solid fa-star reviews__star"></i>
+                  <i class="fa-solid fa-star reviews__star"></i>
+                </div>
+                <img
+                  class="reviews__social-icon reviews__social-icon--bigger"
+                  src="./images/google-plus.svg"
+                />
+              </div>
+              <p class="reviews__review-text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent mollis consequat consequat. Sed viverra dapibus
+                maximus. Donec at metus mattis, vehicula arcu eget, pulvinar
+                est. Donec at placerat nisi, ac scelerisque eros. Pellentesque a
+                feugiat sem. "
+              </p>
+              <div class="reviews__card-footer">
+                <div class="reviews__card-img">
+                  <img src="./images/person2.jpg" />
+                </div>
+                <div class="reviews__person-info">
+                  <p class="reviews__person-name">Liam bower</p>
+                  <p class="reviews__person-position">Mechanic</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__card">
+              <div class="reviews__card-header">
+                <div class="reviews__stars">
+                  <i class="fa-solid fa-star reviews__star"></i>
+                  <i class="fa-solid fa-star reviews__star"></i>
+                  <i class="fa-solid fa-star reviews__star"></i>
+                  <i class="fa-solid fa-star reviews__star"></i>
+                  <i class="fa-solid fa-star reviews__star"></i>
+                </div>
+                <img class="reviews__social-icon" src="./images/facebook.svg" />
+              </div>
+              <p class="reviews__review-text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent mollis consequat consequat. Sed viverra dapibus
+                maximus. Donec at metus mattis, vehicula arcu eget, pulvinar
+                est. Donec at placerat nisi, ac scelerisque eros. Pellentesque a
+                feugiat sem."
+              </p>
+              <div class="reviews__card-footer">
+                <div class="reviews__card-img">
+                  <img src="./images/person3.jpg" />
+                </div>
+                <div class="reviews__person-info">
+                  <p class="reviews__person-name">Nicky</p>
+                  <p class="reviews__person-position">Dancer</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <article class="product__cta">
+            <h2 class="product__cta-title">Get One Step Ahead Of Disease</h2>
+            <p class="product__cta-paragraph">
+              Imperdiet aliquet est vel nulla turpis eu consequat ullamcorper a
+              egestas suspendisse faucibus eu velit, phasellus pulvinar lorem et
+              libero et tortor, sapien nulla.
+            </p>
+            <button class="btn btn--blue product__cta-btn">Shop now</button>
+          </article>
+        </div>
+      </section>
+      <section class="page__section contacts" id="contact">
+        <div class="container">
+          <ul class="contacts__list">
+            <li class="contacts__contact">
+              <i class="fa-solid fa-location-dot contacts__icon"></i>
+              <div class="contacts__text-body">
+                <h3 class="contacts__title">Address</h3>
+                <a
+                  class="contacts__paragraph"
+                  href="https://www.google.com/maps/place/123+5th+Ave,+New+York,+NY+10003,+%D0%A1%D0%A8%D0%90/@40.7391967,-73.9908602,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a3b24b424f:0x618680d3f8c2f773!8m2!3d40.7391967!4d-73.9908602"
+                  target="_blank"
+                  >123 5th Avenue, New York, US</a
+                >
+              </div>
+            </li>
+            <div class="contacts__divider"></div>
+            <li class="contacts__contact">
+              <i class="fa-solid fa-phone-flip contacts__icon"></i>
+              <div class="contacts__text-body">
+                <h3 class="contacts__title">Call us</h3>
+                <a
+                  class="contacts__paragraph"
+                  href="tel: +11234567890"
+                  target="_blank"
+                  >+1 123 456 7890</a
+                >
+              </div>
+            </li>
+            <div class="contacts__divider"></div>
+            <li class="contacts__contact">
+              <i class="fa-solid fa-envelope contacts__icon"></i>
+              <div class="contacts__text-body">
+                <h3 class="contacts__title">Email us</h3>
+                <a
+                  class="contacts__paragraph"
+                  href="mailto: info@example.com"
+                  target="_blank"
+                  >info@example.com</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-  <section class="box">
-      <h1>Learn Browsersync & Gulp Meow!</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam repudiandae laborum exercitationem, cupiditate voluptate cum molestiae explicabo laudantium officiis assumenda id sapiente, nihil necessitatibus culpa quasi amet delectus? Vitae!
-        Distinctio ratione velit nostrum eos eum possimus perferendis consequuntur, nihil illo aut eligendi cupiditate placeat fuga reiciendis beatae laboriosam magni, qui voluptatum repellat sed. Vel possimus in fuga quam hic.
-        Fuga modi unde officiis quibusdam, veritatis vero tenetur saepe dolores suscipit sequi placeat sed, inventore dolor nemo nostrum consectetur doloribus voluptatum excepturi necessitatibus aperiam numquam. Pariatur laboriosam error unde officia?
-      </p>
-  </section>
-  
-  <script src="/dist/script.js"></script>
-</body>
+    <footer class="page__section footer">
+      <div class="container">
+        <ul class="footer__columns">
+          <li class="footer__column">
+            <div class="footer__logo"></div>
+            <p class="footer__description">
+              Our team is led by several chief engineers, composed of a large
+              number of researchers absorbed in their work in our comprehensive
+              laboratory, which is also a renowned medical equipment testing
+              center in Hong Kong.
+            </p>
+          </li>
+          <li class="footer__column">
+            <h3 class="footer__title">Company</h3>
+            <ul>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link footer__list-link--active"
+                  >Home</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#about" class="footer__list-link">About</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#product" class="footer__list-link">Product</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#contact" class="footer__list-link">Contact</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">History</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__column">
+            <h3 class="footer__title">Follow Us</h3>
+            <ul>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">
+                  <img src="./images/facebook.svg" class="footer__icon" />
+                  <p>Facebook</p></a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">
+                  <img src="./images/twitter.svg" class="footer__icon" />
+                  <p>Twitter</p>
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">
+                  <img src="./images/google-plus.svg" class="footer__icon" />
+                  <p>Google +</p>
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">
+                  <img src="./images/youtube.svg" class="footer__icon" />
+                  <p>YouTube</p>
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">
+                  <img src="./images/linkedin.svg" class="footer__icon" />
+                  <p>Linkedin</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__divider"></div>
+      <p class="footer__copyright">Copyright © 2020 N95</p>
+    </footer>
+    <script src="/dist/script.js"></script>
+  </body>
 </html>

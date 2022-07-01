@@ -1,0 +1,60 @@
+.certification {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @include onTablet {
+    justify-content: space-between;
+  }
+
+  @include onMobile {
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 15px;
+    line-height: 24px;
+    color: $colorGrey;
+    margin-right: 16px;
+    z-index: 3;
+  }
+
+  &__divider {
+    width: 147px;
+    height: 1px;
+    background-color: $colorAccent;
+    margin-right: 87px;
+    z-index: 3;
+
+    @include onTablet {
+      width: 70px;
+      margin-right: 25px;
+    }
+
+    @include onMobile {
+      margin: 5px auto 0;
+    }
+  }
+
+  &__image {
+    display: block;
+    height: 80px;
+    z-index: 3;
+
+    @include onMobile {
+      margin-top: 25px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 100px;
+
+      @include onTablet {
+        margin-right: 20px;
+      }
+
+      @include onMobile {
+        margin-right: 0;
+      }
+    }
+  }
+}

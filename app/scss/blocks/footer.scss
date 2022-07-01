@@ -1,0 +1,89 @@
+.footer {
+  padding: 73px 0 30px;
+  background-color: $colorLightGrey;
+  margin: 0;
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    width: 161px;
+    height: 40px;
+    background-color: #c4c4c4;
+    margin-bottom: 33px;
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 24px;
+    color: $colorGrey;
+    max-width: 340px;
+
+    @include onTablet {
+      min-width: 420px;
+      max-width: 450px;
+      flex: 1 1 100%;
+      margin-bottom: 30px;
+    }
+
+    @include onMobile {
+      min-width: 290px;
+      max-width: 450px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    @extend %h3;
+    margin-bottom: 12px;
+  }
+
+  &__list-item {
+    font-size: 15px;
+    line-height: 30px;
+    color: $colorGrey;
+    cursor: pointer;
+
+    &:not(:nth-child(5)) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__list-link {
+    text-decoration: none;
+    color: $colorGrey;
+    display: flex;
+    align-items: center;
+
+    &--active {
+      color: $colorBlue;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) saturate(100%) invert(34%) sepia(80%) saturate(993%)
+      hue-rotate(189deg) brightness(82%) contrast(106%);
+    margin-right: 14px;
+  }
+
+  &__divider {
+    height: 1px;
+    width: 100%;
+    background-color: #e1e6ec;
+  }
+
+  &__copyright {
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    color: $colorGrey;
+    margin-top: 30px;
+  }
+}

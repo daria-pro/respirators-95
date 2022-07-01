@@ -1,0 +1,29 @@
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 46px;
+  border-radius: 8px;
+  @extend %body-rubik;
+
+  &--blue {
+    background-color: $colorBlue;
+    border: none;
+    color: #fff;
+    box-shadow: 0px 10px 15px rgba(27, 95, 193, 0.19);
+  }
+
+  &--accent {
+    background-color: transparent;
+    border: 1px solid $colorAccent;
+    color: $colorAccent;
+  }
+
+  &--blue-outlined {
+    background-color: transparent;
+    border: 1px solid $colorBlue;
+    color: $colorBlue;
+  }
+}

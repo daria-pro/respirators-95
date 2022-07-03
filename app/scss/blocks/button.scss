@@ -13,17 +13,30 @@
     border: none;
     color: #fff;
     box-shadow: 0px 10px 15px rgba(27, 95, 193, 0.19);
+
+    &:hover {
+      color: #fff;
+      box-shadow: 0px 10px 25px rgba(27, 95, 193, 0.4);
+    }
   }
 
   &--accent {
     background-color: transparent;
     border: 1px solid $colorAccent;
     color: $colorAccent;
+
+    &:hover {
+      box-shadow: 0px 10px 25px rgba(255, 184, 0, 0.2);
+    }
   }
 
   &--blue-outlined {
     background-color: transparent;
     border: 1px solid $colorBlue;
     color: $colorBlue;
+
+    &:hover {
+      box-shadow: 0px 10px 25px rgba(27, 95, 193, 0.4);
+    }
   }
 }

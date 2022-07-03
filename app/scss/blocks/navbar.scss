@@ -75,6 +75,10 @@
     text-decoration: none;
     color: $colorGrey;
 
+    &:hover {
+      color: #000;
+    }
+
     &--active {
       color: $colorDark;
     }
